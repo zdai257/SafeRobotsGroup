@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Safe Robotics Research Group - Research Projects and Demos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safe Robotics Research Group @ Aston</title>
+
+  <!-- Google Fonts & Bulma CSS matching Eliahu Horwitz's Template Framework -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .project-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #fff;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .card-video-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      overflow: hidden;
+    }
+    .card-video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-content-area {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Header Section -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-2 publication-title">Safe Robots Research Group</h1>
+        <h3 class="subtitle is-4 text-grey">Aston University</h3>
+        
+        <div class="is-size-5 publication-authors" style="margin-top: 1rem;">
+          <span class="author-block">
+            Contact: <a href="mailto:z.dai1@aston.ac.uk">Dr Zhuangzhuang Dai</a>
+          </span>
+        </div>
+
+        <div class="column has-text-centered" style="margin-top: 0.5rem;">
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="https://research.aston.ac.uk/en/persons/zhuangzhuang-dai/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-university"></i></span>
+                <span>Institutional Homepage</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Gallery Section (3-Column Grid) -->
+  <section class="section" style="padding-top: 0rem;">
+    <div class="container is-max-desktop">
+      <div class="columns is-multiline">
+
+        <!-- PROJECT ITEM 1 -->
+        <div class="column is-4">
+          <div class="project-card">
+            <div class="card-video-container">
+              <video autoplay muted loop playsinline preload="metadata">
+                <source src="./static/videos/wali02_demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-content-area">
+              <div>
+                <h4 class="title is-6 has-text-weight-bold mb-2">Gaze-Target-Aware Human-Robot Interaction</h4>
+              </div>
+              <div class="buttons are-small mt-3">
+                <a href="https://arxiv.org/abs/2507.00253" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+                <a href="https://huggingface.co/zdai257/GazeMoE" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT ITEM 2 -->
+        <div class="column is-4">
+          <div class="project-card">
+            <div class="card-video-container">
+              <video autoplay muted loop playsinline preload="metadata">
+                <source src="./static/videos/banner_video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-content-area">
+              <div>
+                <h4 class="title is-6 has-text-weight-bold mb-2">Voice-Assisted Quadruped Robot Control</h4>
+              </div>
+              <div class="buttons are-small mt-3">
+                <a href="#" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+                <a href="#" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT ITEM 3 -->
+        <div class="column is-4">
+          <div class="project-card">
+            <div class="card-video-container">
+              <video autoplay muted loop playsinline preload="metadata">
+                <source src="./static/videos/WALI-HRI_VideoDemo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-content-area">
+              <div>
+                <h4 class="title is-6 has-text-weight-bold mb-2">Worker Attention Tracking Data Collection</h4>
+              </div>
+              <div class="buttons are-small mt-3">
+                <a href="#" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+                <a href="#" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <!-- PROJECT ITEM 4 -->
+        <div class="column is-4">
+          <div class="project-card">
+            <div class="card-video-container">
+              <video autoplay muted loop playsinline preload="metadata">
+                <source src="./static/videos/ICRA27_1461_VI_i.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-content-area">
+              <div>
+                <h4 class="title is-6 has-text-weight-bold mb-2">Depth-Aware Human Gaze Tracking</h4>
+              </div>
+              <div class="buttons are-small mt-3">
+                <a href="#" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+                <a href="#" class="button is-dark is-rounded">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Matching Template Style -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              Safe Robotics Research Group. Built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
